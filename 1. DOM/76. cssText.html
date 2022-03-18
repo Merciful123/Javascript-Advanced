@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <p id="myp" style="background-color: darkgrey; color:black;">Paragraph</p>
+        <script>
+           var p = document.getElementById("myp");
+           var cs = p.style;
+           // cssText returns or sets the text of the element's inline style declaration only
+           // returns
+           console.log(cs.cssText);
+           //console.log(p);
+
+           // sets
+           cs.cssText = "color: blue; border: 1px solid blue";
+           console.log(p);
+        </script>
+    </body>
+</html>

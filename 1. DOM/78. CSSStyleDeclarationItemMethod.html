@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <p id="myp" style="background-color: darkgrey; color:black;">Paragraph</p>
+        <script>
+           var p = document.getElementById("myp");
+           var cs = p.style;
+           // It returns a CSS property name from a CSSStyleDeclaration by index. 
+           console.log(cs.item(1));       // console.log(cs[0]);
+
+        </script>
+    </body>
+</html>

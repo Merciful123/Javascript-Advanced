@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+    </head>
+    <body>
+
+        <ul id="myul">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>        
+
+        <script>
+            var u = document.getElementById("myul");
+            document.write(u.innerText);     // it will show only text no html/markup
+            u.innerText = "This is Text";    // it set/replace with text
+            console.log(u);                  // after replacing you can see only text inside ul
+
+        </script>
+    </body>
+</html>
+

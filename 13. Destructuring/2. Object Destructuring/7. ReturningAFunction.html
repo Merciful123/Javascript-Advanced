@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var course = {
+        courseName: "JavaScript",
+        duration: "SixMonths",
+        tutor: "GeekyShows"
+      };
+      function show(z) {
+        return z;
+      }
+      /* Old Way
+      var x = show(course);
+      console.log(x.courseName);
+      console.log(x.duration);
+      console.log(x.tutor);
+      */
+
+      // Destructuring
+      // var x = show(course);
+      // var { courseName, duration, tutor } = x;
+      var { courseName, duration, tutor } = show(course);
+      console.log(courseName);
+      console.log(duration);
+      console.log(tutor);
+    </script>
+  </body>
+</html>

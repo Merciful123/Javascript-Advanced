@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+
+<body>
+	<h1>Exception Handling</h1>
+	<script>
+		function getRectArea(w, h) {
+			if (isNaN(w) || isNaN(h)) {
+				throw "Parameter is not a number!";
+			}
+		}
+
+		try {
+			getRectArea(10, 'A');
+		}
+		catch (e) {
+			document.write(e);
+		}
+		document.write("<br><br>I have no idea what going on above");
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+        <style>
+            .myclass1 {
+                background-color: blue;
+            }
+            .myclass2 {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="myp" class="myclass2 myclass3" style= "color:yellowgreen;">Paragraph</p>
+        <script>
+            var p = document.getElementById("myp");
+            var elementClass = p.classList;
+
+            // The contains() method of the DOMTokenList interface returns a Boolean — true if the underlying list contains the given token, otherwise false.
+            // DOMTokentList.contains(token);
+
+           var c = elementClass.contains("myclass2"); 
+           console.log(c);  
+  
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Tree</title>
+    </head>
+    <body>
+        <h1 id="myid">
+            <!-- This is Comment -->
+           <span>We are Learning JS</span> 
+           <em>Hello</em> <!-- I am comment -->
+
+        </h1>
+        <p  id="myid1">I am Paragraph</p>
+        <p  id="myid2"><span>I am an span</span> I am Paragraph</p>
+        <script>
+            var result = document.getElementById("myid");
+            //console.log(result.lastChild.previousSibling);
+            //console.log(result.lastChild.previousElementSibling);
+            result.lastElementChild.previousElementSibling.textContent = "I am learning dom";
+        </script>
+    </body>
+</html>
+

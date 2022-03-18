@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <div id="mydiv">
+            <h1 id="myh1"> Heading 1 </h1>
+            <h2 id="myh2"> Heading 2 </h2>
+            <h3 id="myh3"> Heading 3 </h3>
+        </div>            
+
+        <script>
+            // targetElement.insertAdjacentHTML("position", element)
+            // position : 'beforebegin' | 'afterbegin' | 'beforeend' | 'afterend'
+            var parentNode = document.getElementById("mydiv");
+            var h = document.getElementById("myh2");
+            var myhtml = "<span> Hello Geekyshows </span>";
+            h.insertAdjacentHTML('beforebegin', myhtml);
+            h.insertAdjacentHTML('afterbegin', myhtml);
+            h.insertAdjacentHTML('beforeend', myhtml);
+            h.insertAdjacentHTML('afterend', myhtml);
+            console.log(parentNode);
+
+        </script>
+    </body>
+</html>
+

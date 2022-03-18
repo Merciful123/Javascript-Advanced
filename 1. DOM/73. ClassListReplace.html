@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+        <style>
+            .myclass1 {
+                background-color: blue;
+            }
+            .myclass2 {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="myp" class="myclass2 myclass3" style= "color:yellowgreen;">Paragraph</p>
+        <script>
+            var p = document.getElementById("myp");
+            var elementClass = p.classList;
+
+            // The replace() method of the DOMTokenList interface replaces an existing token with a new token.
+            // DOMTokentList.replace("old", "new")
+
+           elementClass.replace("myclass2", "myclass4"); 
+            console.log(elementClass);  
+  
+        </script>
+    </body>
+</html>

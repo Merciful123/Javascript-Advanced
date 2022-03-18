@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+
+<body>
+
+	<h1>Window Open</h1>
+	<button id="kloj">Close New Window</button>
+
+	<script>
+		var newWindow = window.open("http://www.twitter.com", "_blank", "width=200, height=200");
+		function ekjit() {
+			newWindow.close();
+		}
+		document.getElementById("kloj").addEventListener("click", ekjit);
+		
+		
+		/*
+		var newWindow = window.open("", "_blank", "height=100, width=100");
+		newWindow.document.write("Main New Window Hoon");
+		function ekjit() {
+			newWindow.document.close();		// Make sure you close the document as well
+			newWindow.close();
+		}
+		document.getElementById("kloj").addEventListener("click", ekjit);
+		*/
+
+
+	</script>
+</body>
+
+</html>

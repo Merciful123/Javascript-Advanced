@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+<body>
+	
+	<h1>Add Event Listener</h1>
+	<button id="mybtn">Click Me</button>
+
+
+	<script>
+		function disp1() {
+			alert("Button Clicked 1");
+		}
+		function disp2() {
+			alert("Button Clicked 2");
+		}
+		var btn = document.getElementById("mybtn");
+		btn.addEventListener("click", disp1);
+		btn.addEventListener("click", disp2);
+	</script>
+</body>
+</html>

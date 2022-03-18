@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <ul id="myul">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>        
+        <div id="mydiv">
+
+        </div>
+        <script>
+        // targetNode.cloneNode(deep) where deep = ture | false
+            var u = document.getElementById("myul");
+            var duplicateNode = u.cloneNode(true);
+            var div = document.getElementById("mydiv");
+            div.appendChild(duplicateNode);
+            console.log(document.body);
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+        <style>
+            .myclass1 {
+                background-color: blue;
+            }
+            .myclass2 {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="myp" class="myclass2 myclass3" style= "color:yellowgreen;">Paragraph</p>
+        <script>
+            var p = document.getElementById("myp");
+            var elementClass = p.classList;
+            console.log(elementClass);
+            console.log(elementClass.value);       // values of classList
+   
+        </script>
+    </body>
+</html>

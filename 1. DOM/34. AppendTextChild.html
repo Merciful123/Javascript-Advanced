@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <div id="myid">
+            <h1>We are Learning JavaScript</h1>
+            <h1>I am h1</h1>
+        </div>
+        <script>
+            // Creating New Text Node
+            var nTNode = document.createTextNode("Text Created by JavaScript");
+            
+            var targetNode = document.getElementById("myid");
+            
+            // Append New Text Node to div 
+            targetNode.appendChild(nTNode);
+
+            console.log(targetNode);
+/*
+            var targetNode = document.getElementById("myid");
+
+            // Creating and Append New Text
+            targetNode.appendChild(document.createTextNode("Text Creadted by JavaScript"));
+
+            console.log(targetNode);
+*/
+        </script>
+    </body>
+</html>
+

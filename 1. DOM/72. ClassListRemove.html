@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+        <style>
+            .myclass1 {
+                background-color: blue;
+            }
+            .myclass2 {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="myp" class="myclass2 myclass3 myclass4 myclass5 myclass6 myclass7" style= "color:yellowgreen;">Paragraph</p>
+        <script>
+            var p = document.getElementById("myp");
+            var elementClass = p.classList;
+
+            // It will remove the given token to the list.
+			// DOMTokentList.remove("class_name1", "class_name2")
+            // remove single class
+           elementClass.remove("myclass4"); 
+
+           console.log(elementClass); 
+/*           
+            // Remove multiple class
+            elementClass.remove("myclass5","myclass6","myclass7"); 
+            console.log(elementClass);      
+*/ 
+        </script>
+    </body>
+</html>

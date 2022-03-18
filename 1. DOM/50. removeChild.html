@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <ul id="myul">
+            <li>Item 1</li>
+            <li id="item_2">Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>        
+
+        <script>
+            // parentNode.removeChild(target_node) where deep = ture | false
+           var u = document.getElementById("myul");
+           var i = document.getElementById("item_2");
+           var delNode = u.removeChild(i);   // remove with specifying parentNode
+        //    var delNode = u.removeChild(u.childNodes[1]);  // remove without specifying child
+        //    var delNode = i.parentNode.removeChild(i);  // remove without specifying parentNode
+           console.log(delNode);
+           console.log(u);
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Tree</title>
+    </head>
+    <body>
+        <h1 id="myid">
+            <!-- This is Comment -->
+           <span>We are Learning JS</span> 
+        </h1>
+        <p  id="myid1">I am Paragraph</p>
+        <p  id="myid2"><span>I am an element</span> I am Paragraph</p>
+        <script>
+            var result = document.getElementById("myid");
+            // access one by one using index number
+          //  console.log(result.childNodes[0]);
+         //   console.log(result.children[0]);
+
+        // access all using loop with length property
+            // find length
+            var cnlen = result.childNodes.length;
+            var clen = result.children.length;
+
+            // for loop for childNode
+            for(let i=0; i<cnlen; i++){
+                console.log(result.childNodes[i]);
+            }
+            
+            // for loop for children
+            for(let i=0; i<clen; i++){
+                console.log(result.children[i]);
+            }
+        </script>
+    </body>
+</html>
+

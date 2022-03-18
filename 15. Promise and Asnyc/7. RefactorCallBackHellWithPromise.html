@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Callback Hell
+    // console.log("Start")
+    // function getName(name, callback) {
+    //   setTimeout(() => {
+    //     console.log("Inside Name setTimeOut")
+    //     callback(name);
+    //   }, 2000);
+    // }
+
+    // function getHobbies(name, callback) {
+    //   setTimeout(() => {
+    //     console.log("Inside Hobbies setTimeOut")
+    //     callback(['Cricket', 'Reading', 'Dancing']);
+    //   }, 1000);
+    // }
+
+    // const nm = getName('Sonam', (nm) => { getHobbies(nm, hobby => { console.log(hobby) }) })
+
+    // console.log("End")
+
+    // Refactor Above Code using Promise
+    console.log("Start")
+    function getName(name) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          console.log("Inside Name setTimeOut-Promise")
+          resolve(name);
+        }, 2000);
+      })
+    }
+
+    function getHobbies(name) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          console.log("Inside Hobbies setTimeOut")
+          resolve(['Cricket', 'Reading', 'Dancing']);
+        }, 1000);
+      })
+    }
+
+    getName('Sonam')
+      .then(nm => getHobbies(nm))
+      .then(hobby => console.log(hobby))
+
+    console.log("End")
+
+  </script>
+</body>
+
+</html>

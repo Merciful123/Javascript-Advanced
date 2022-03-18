@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+        <style>
+            .myclass1 {
+                background-color: blue;
+            }
+            .myclass2 {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="myp" class="myclass2 myclass3" style= "color:yellowgreen;">Paragraph</p>
+        <script>
+            var p = document.getElementById("myp");
+            var elementClass = p.classList;
+
+            // It will returns an item in the list by its index (returns undefined if the number is greater than or equal to the length of the list)
+			// DOMTokentList.item(index)
+            console.log(elementClass.item(1));       
+   
+        </script>
+    </body>
+</html>

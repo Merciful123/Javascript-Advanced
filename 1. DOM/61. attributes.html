@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <div>
+            <p>Hello Paragraph</p>
+        </div>
+        <h2 id="myh2" class="myclass" title="somedata">Hello Geekyshows</h2>
+        <script>
+            var h = document.getElementById("myh2");
+            console.log(h.attributes);              // returns all attributes list
+            console.log(h.attributes[0]);           // returns index 0 attribute
+            console.log(h.attributes['title']);     // return title key attribute
+
+        </script>
+    </body>
+</html>
+

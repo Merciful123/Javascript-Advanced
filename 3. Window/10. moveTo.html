@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+
+<body>
+	<h1>Moving Window</h1>
+	<button type="button" id="openbtn">Open Window</button>
+	<button type="button" id="movebtn">Move Window</button>
+	<script>
+		var newWindow;
+		function openWin() {
+			newWindow = window.open("", "newWindow", "width=300, height=200");
+			newWindow.document.write("New Window Hoon Main");
+		}
+
+		function moveWin() {
+			newWindow.moveTo(200, 200);
+			newWindow.focus();
+		}
+
+		document.getElementById("openbtn").addEventListener("click", openWin);
+		document.getElementById("movebtn").addEventListener("click", moveWin);
+
+	</script>
+</body>
+
+</html>

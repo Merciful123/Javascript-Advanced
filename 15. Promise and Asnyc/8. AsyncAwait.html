@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    //  Asyn and Await
+    console.log("Start")
+    function getName(name) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          console.log("Inside Name setTimeOut-Promise")
+          resolve(name);
+        }, 2000);
+      })
+    }
+
+    function getHobbies(name) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          console.log("Inside Hobbies setTimeOut")
+          resolve(['Cricket', 'Reading', 'Dancing']);
+        }, 1000);
+      })
+    }
+
+    async function showHobby() {
+      const nm = await getName('Sonam')
+      const hobby = await getHobbies(nm)
+      console.log(hobby)
+    }
+    showHobby()
+    console.log("End")
+
+    //  Asyn and Await with Try Catch
+    // console.log("Start")
+    // function getName(name) {
+    //   return new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //       console.log("Inside Name setTimeOut-Promise")
+    //       resolve(name);
+    //     }, 2000);
+    //   })
+    // }
+
+    // function getHobbies(name) {
+    //   return new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //       console.log("Inside Hobbies setTimeOut")
+    //       resolve(['Cricket', 'Reading', 'Dancing']);
+    //     }, 1000);
+    //   })
+    // }
+
+    // async function showHobby() {
+    //   try {
+    //     const nm = await getName('Sonam')
+    //     const hobby = await getHobbies(nm)
+    //     console.log(hobby)
+    //   }
+    //   catch {
+    //     console.log("Could not fetch Hobbies")
+    //   }
+    // }
+    // showHobby()
+    // console.log("End")
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Geekyshows</title>
+</head>
+
+<body>
+    <div id="mydiv">
+        <ul id="myul">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+    <script>
+        var div = document.getElementById("mydiv");
+        var u = document.getElementById("myul");
+        u.outerHTML = "<p>This is paragraph</p>"
+        console.log(div);
+    </script>
+</body>
+
+</html>

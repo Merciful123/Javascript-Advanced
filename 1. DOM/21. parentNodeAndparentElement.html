@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html id="myid">
+    <head >
+        <title>Tree</title>
+    </head>
+    <body>
+        <h1> We are Learning JS <!-- This is Comment --> </h1>
+        <p  id="myid1"> I am Paragraph</p>
+		<script>
+		   var result = document.getElementById("myid");
+		   var result1 = document.getElementById("myid1");
+		   // It will return the parent whether parent is element node or not
+		   console.log(result.parentNode);
+		   // It will return null if the parent is not an element
+		   console.log(result.parentElement);
+			
+			// Here both returns parent becoz both have parent element
+		   console.log(result1.parentNode);
+		   console.log(result1.parentElement);
+		</script>
+    </body>
+</html>
+

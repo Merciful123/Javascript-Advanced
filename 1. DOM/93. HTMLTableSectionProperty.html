@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+
+<body>
+		<table border="1" id="mytab">
+				<caption>My Table Caption</caption>
+				<thead>
+						<tr>
+								<th>ID</th>
+								<th>Name</th>
+								<th>Course</th>
+						</tr>
+				</thead>
+				<tbody id="mytbody">
+						<tr>
+								<td>11</td>
+								<td>Rahul</td>
+								<td>JavaScript</td>
+						</tr>
+						<tr>
+								<td>22</td>
+								<td>Sonam</td>
+								<td>PHP</td>
+						</tr>
+				</tbody>
+				<tfoot>
+						<tr>
+							<td>55</td>
+							<td>Rohan</td>
+							<td>JSP</td>
+						</tr>
+				</tfoot>
+		</table>
+		
+	<script>
+		var tbody = document.getElementById("mytbody");
+		var ro = tbody.rows;
+		console.log(ro);
+		document.write(ro[1].innerHTML + "<br>");
+		// ro[1].innerHTML = "<tr><td>100</td><td>Jyoti</td><td>ReactJS</td></tr>";
+	</script>
+</body>
+
+</html>

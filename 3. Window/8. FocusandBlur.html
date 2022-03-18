@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+
+<body>
+
+	<h1>Focus and Blur</h1>
+	<button type="button" id="openbtn">Open Window</button>
+	<button type="button" id="focusbtn">Focus</button>
+	<button type="button" id="blurbtn">Blur</button>
+	<script>
+		var newWindow;
+
+		function openWin() {
+			newWindow = window.open("", "_blank", "width=300, height=200");
+		}
+		function focusWin() {
+			newWindow.focus();
+		}
+		function blurWin() {
+			newWindow.blur();
+		}
+		document.getElementById("openbtn").addEventListener("click", openWin);
+		document.getElementById("focusbtn").addEventListener("click", focusWin);
+		document.getElementById("blurbtn").addEventListener("click", blurWin);
+	</script>
+</body>
+
+</html>

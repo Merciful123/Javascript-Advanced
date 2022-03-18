@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+
+<body>
+		<table border="1" id="mytab">
+				<caption>My Table Caption</caption>
+				<thead>
+						<tr>
+								<th>ID</th>
+								<th>Name</th>
+								<th>Course</th>
+						</tr>
+				</thead>
+				<tbody>
+						<tr>
+								<td>11</td>
+								<td>Rahul</td>
+								<td>JavaScript</td>
+						</tr>
+						<tr>
+								<td>22</td>
+								<td>Sonam</td>
+								<td>PHP</td>
+						</tr>
+				</tbody>
+				<tfoot>
+						<tr>
+							<td>55</td>
+							<td>Rohan</td>
+							<td>JSP</td>
+						</tr>
+				</tfoot>
+		</table>
+		
+	<script>
+		var table = document.getElementById("mytab");
+		table.deleteTFoot();
+	</script>
+</body>
+
+</html>

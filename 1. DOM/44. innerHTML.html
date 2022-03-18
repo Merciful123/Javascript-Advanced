@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+    </head>
+    <body>
+
+        <ul id="myul">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>        
+
+        <script>
+            var u = document.getElementById("myul");
+            // console.log(u.innerHTML);      // show all inner html of ul 
+            // u.innerHTML = "";                // will set/replace empty string in inner html of ul
+            // console.log(u.innerHTML);   // ul innerhtml has set to empty so nothing will show
+            // console.log(u);              // ul is still there it just set inner html empty
+            u.innerHTML = "<li>Java</li><li>CSS</li><li>JS</li>" // set html 
+        </script>
+    </body>
+</html>
+

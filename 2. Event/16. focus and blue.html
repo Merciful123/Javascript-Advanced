@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+
+<body>
+	<h1>Focus Event</h1>
+	Name: <input type="text" id="mytext">
+
+	<script>
+		var txt = document.getElementById("mytext");
+		function fe(e) {
+			txt.style.backgroundColor = 'orange';
+		}
+		function be(e) {
+			txt.style.backgroundColor = 'white';
+		}
+		txt.addEventListener("focus", fe);
+		txt.addEventListener("blur", be);
+
+	</script>
+</body>
+
+</html>

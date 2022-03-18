@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+<body>
+	
+	<h1>Overwrite</h1>
+	<button id="mybtn">Click Me</button>
+
+
+	<script>
+		function disp1() {
+			alert("Button Clicked 1");
+		}
+		function disp2() {
+			alert("Button Clicked 2");
+		}
+		document.getElementById("mybtn").onclick = disp1;
+		document.getElementById("mybtn").onclick = disp2;
+	</script>
+</body>
+</html>

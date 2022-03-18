@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var course = {
+        courseName: "JavaScript",
+        duration: "SixMonths",
+        tutor: "GeekyShows"
+      };
+      /* Old Way
+      console.log(course.courseName);
+      console.log(course.duration);
+      console.log(course.tutor); 
+      */
+
+      // Object Destructuring
+      var { courseName, duration, tutor } = course;
+      console.log(courseName);
+      console.log(duration);
+      console.log(tutor);
+    </script>
+  </body>
+</html>

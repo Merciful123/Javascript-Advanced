@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head >
+        <title>Geekyshows</title>
+    </head>
+    <body>
+        <p id="myp" style="background-color: darkgrey; color:black !important;">Paragraph</p>
+        <script>
+           var p = document.getElementById("myp");
+           var cs = p.style;
+           // It  returns a DOMString that provides all explicitly set priorities on the CSS property.
+           var propPriorty = cs.getPropertyPriority('color');
+           console.log(propPriorty);
+           console.log(p);
+
+        </script>
+    </body>
+</html>

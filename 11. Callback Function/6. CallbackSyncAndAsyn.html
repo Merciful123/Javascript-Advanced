@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GeekyShows</title>
+  </head>
+  <body>
+    <script>
+      // Synchronous
+      function show() {
+        console.log("I am show Function");
+      }
+      function geeky(callback) {
+        callback();
+      }
+      geeky(show);
+
+      console.log("End");
+
+      // Asynchronous
+      setTimeout(function show() {
+        console.log("I am show Function");
+      }, 5000);
+
+      console.log("End");
+    </script>
+  </body>
+</html>

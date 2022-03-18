@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+
+<body>
+
+	<p id="myp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem in doloribus ducimus fugit alias quia, quae sapiente,
+		illo nobis molestiae accusantium optio iste veniam cumque et omnis debitis nihil a.</p>
+
+	<button type="button" id="mybtn">Clear Time</button>
+	<script>
+
+		// SetTimout Method
+
+		function changeCSS() {
+			document.getElementById("myp").style = 'color:red';
+		}
+		setTimeout(changeCSS, 2000);
+
+		// setTimeout(function changeCSS() {
+		// 	document.getElementById("myp").style = 'color:red';
+		// }, 2000);
+
+		// setTimeout(function () {
+		// 	document.getElementById("myp").style = 'color:red';
+		// }, 2000);
+
+		// setTimeout(() => {
+		// 	document.getElementById("myp").style = 'color:red';
+		// }, 2000);
+
+		// All above are Same
+
+		// clearTimeout Method
+/*
+		var timerID = setTimeout(() => {
+			document.getElementById("myp").style = 'color:red';
+		}, 2000);
+
+		function clrtime() {
+			clearTimeout(timerID);
+		}
+
+		document.getElementById("mybtn").addEventListener("click", clrtime);
+*/
+
+
+	</script>
+</body>
+
+</html>

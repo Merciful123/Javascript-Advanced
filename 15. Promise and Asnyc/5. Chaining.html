@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+	// Method Chaining
+    const promiseObj = new Promise((resolve, reject) => {
+      let num = 10
+      resolve(num)
+    }).then(
+      (value) => {
+        console.log(value);
+        return value + 10
+      }
+    ).then(
+      (value) => { console.log(value) }
+    )
+
+  </script>
+</body>
+
+</html>

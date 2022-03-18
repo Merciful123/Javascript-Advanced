@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+
+<body>
+
+	<h1>Key Event</h1>
+	Name: <input type="text" id="mytext">
+
+
+	<script>
+		var txt = document.getElementById("mytext");
+		function ke(e) {
+			console.log(e.type + ' ' + e.keyCode + ' ' + String.fromCharCode(e.keyCode));
+		}
+		txt.addEventListener("keydown", ke, false);
+		txt.addEventListener("keypress", ke, false); // KeyPress works with only printable characters
+		txt.addEventListener("keyup", ke, false);
+
+	</script>
+</body>
+
+</html>

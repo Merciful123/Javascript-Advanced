@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+
+<body>
+	<h1>Strict Mode</h1>
+	<script>
+
+		"use strict";
+		var a = 10;			// it will show error without var
+		console.log(a);
+/*
+		a = 10;
+		console.log(a);
+		function abc() {
+			"use strict";
+			var b = 20;				// it will show error without var
+			console.log(b);
+		}
+		abc();
+*/
+
+/*
+		"use strict";
+		function abc(a, b) {		// it will show error if we write duplicate parameter ex- (a,b,b)
+			return a + b;
+		}
+		console.log(abc(10, 20));
+*/
+	</script>
+</body>
+
+</html>

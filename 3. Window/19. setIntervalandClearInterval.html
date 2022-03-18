@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+
+<body>
+	<div id="mydiv"></div>
+
+	<button type="button" id="mybtn">Clear Time</button>
+	<script>
+
+		// SetInterval Method
+
+		function runtext() {
+			document.getElementById("mydiv").textContent += " Hello";
+		}
+		setInterval(runtext, 1000);
+
+/*
+		var intervalID = setInterval(() => {
+			document.getElementById("mydiv").textContent += " Hello";
+		}, 1000);
+
+		function clrtime() {
+			clearInterval(intervalID);
+		}
+
+		document.getElementById("mybtn").addEventListener("click", clrtime);
+*/
+
+	</script>
+</body>
+
+</html>

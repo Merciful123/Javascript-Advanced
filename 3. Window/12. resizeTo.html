@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+
+<body>
+	<h1>Resizing Window</h1>
+	<button type="button" id="openbtn">OpenWindow</button>
+	<button type="button" id="resizebtn">ResizeWindow</button>
+
+
+	<script>
+		var newWindow;
+		function openWin() {
+			newWindow = window.open("", "newWindow", "width=300, height=200");
+			newWindow.document.write("New Window Hoon Main");
+		}
+		function resizeWin() {
+			newWindow.resizeTo(200, 200);
+			newWindow.focus();
+		}
+		document.getElementById("openbtn").addEventListener("click", openWin);
+		document.getElementById("resizebtn").addEventListener("click", resizeWin);
+	</script>
+</body>
+
+</html>

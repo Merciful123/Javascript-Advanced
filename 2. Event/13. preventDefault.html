@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Geeky Shows</title>
+</head>
+
+<body>
+
+	<h1>Event Methods</h1>
+	<div id="mydiv" style="width: 200px; height:200px; background-color: burlywood">
+		<a href="http://www.geekyshows.com" id="mylink">Click and Open GeekyShows</a>
+	</div>
+
+	<script>
+		function stopLink(e) {
+			e.preventDefault();
+		}
+		function div1(e) {
+			this.style.backgroundColor = 'orange';
+		}
+		var d = document.getElementById("mydiv");
+		var l = document.getElementById("mylink");
+		d.addEventListener("click", div1, false);
+		l.addEventListener("click", stopLink, false);
+
+
+	</script>
+</body>
+
+</html>

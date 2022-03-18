@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Problem with Syn
+    // console.log("Start")
+    // function getName(name) {
+    //   setTimeout(() => {
+    //     console.log("Inside setTimeOut")
+    //     return name;
+    //   }, 2000);
+    // }
+    // const nm = getName('Sonam')
+    // console.log(nm)
+    // console.log("End")
+
+    // Solve Above problem with Callback
+    // console.log("Start")
+    // function getName(name, callback) {
+    //   setTimeout(() => {
+    //     console.log("Inside setTimeOut")
+    //     callback(name);
+    //   }, 2000);
+    // }
+    // const nm = getName('Sonam', (nm) => { console.log(nm) })
+
+    // console.log("End")
+
+    // Callback Hell
+    console.log("Start")
+    function getName(name, callback) {
+      setTimeout(() => {
+        console.log("Inside Name setTimeOut")
+        callback(name);
+      }, 2000);
+    }
+
+    function getHobbies(name, callback) {
+      setTimeout(() => {
+        console.log("Inside Hobbies setTimeOut")
+        callback(['Cricket', 'Reading', 'Dancing']);
+      }, 1000);
+    }
+
+    const nm = getName('Sonam', (nm) => { console.log(nm); getHobbies(nm, hobby => { console.log(hobby) }) })
+
+    console.log("End")
+
+  </script>
+</body>
+
+</html>
